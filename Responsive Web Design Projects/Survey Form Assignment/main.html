@@ -1,0 +1,94 @@
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <div class="title-container">
+    <h1 id="title" class="title">Dental Hygiene</h1>
+  </div>
+  <main class="main-container">
+    <div class="desc-container">
+      <p id="description" class="description">Tell us about your dental hygiene habits!</p>
+    </div>
+    <form id="survey-form" method="GET">
+      <div class="section1">
+        <div class="labels-section1">
+          <label id="name-label" for="name">* Name : </label>
+        </div>
+        <div class="inputs-section1">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Name" required>
+        </div>
+        <div class="labels-section1">
+          <label id="email-label" for="email">* Email : </label>
+        </div>
+        <div class="inputs-section1">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Email">
+        </div>
+        <div class="labels-section1">
+          <label id="number-label" for="age">* Age : </label>
+        </div>
+        <div class="inputs-section1">
+          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+        </div>
+      </div>
+      <div class="section2">
+        <div class="labels-section2">
+          <label for="currentPos" class="role">Which option best describes your current role ?</label>
+        </div>
+        <div class="inputs-section2">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Employed</option>
+            <option value="nojob">Unemployed</option>
+            <option value="reformed">Reformed</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="white-space"></div>
+        <div class="labels-section2">
+          <label for="userRating">* How many times do you brush your teeth per day ?</label>
+        </div>
+        <div class="inputs-section2">
+          <ul>
+            <li class="radio"><label>0<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+            <li class="radio"><label>1<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+            <li class="radio"><label>2+<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-break"></div>
+      <div class="section3">
+        <div class="labels-section3">
+          <label for="preferences">Dental issues you're experiencing :<br>(Check all that apply) </label>
+        </div>
+        <div class="inputs-section3">
+          <ul id="preferences">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Toothache</label></li>
+            <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Hot/Cold Teeth Sensitivity</li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Bleeding or Sore Gums</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Mouth Sores</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Bad Breath</label></li>
+            <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Popping/Clicking when opening mouth</label></li>
+            <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Dry Mouth</label></li>
+            <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Cracked/Broken Teeth</label></li>
+            <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Absent Teeth</label></li>
+            <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Stained/Discolored Teeth</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-break"></div>
+      <div class="section4">
+        <div class="labels-section4">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="inputs-section4">
+          <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+          <div class="button-div">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="section-break"></div>
+  </main>
+</body>

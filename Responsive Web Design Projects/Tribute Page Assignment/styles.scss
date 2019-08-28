@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+.main {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.title-container {
+  height: 125px;
+  width: 100%;
+}
+
+.title {
+  font-size: 3em;
+  color: #571F2D;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #571F2D;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.img-div {
+  width: 75%;
+  margin: 0 auto 20px auto;
+  padding-top: 50px;
+}
+
+.image {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+
+.img-caption {
+  font-size: 1em;
+  color: #571F2D;
+  padding-bottom: 20px;
+}
+
+.timeline, .awards {margin-top: 100px;}
+
+.list {
+  width: 30%;
+  margin: 50px auto;
+}
+
+.list-items {margin: 20px 0;}
+
+.underline {
+  color: #571F2D;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #FBB634;
+}
+
+.no-bullets {list-style-type: none;}
+
+.tribute-info {
+  color: #571F2D;
+  width: 100%;
+  margin: 75px auto;
+  text-align: center;
+}

@@ -1,0 +1,164 @@
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {font-family: 'Lato', sans-serif;}
+
+body {background-color: #fce59f;}
+
+.title-container {
+  text-align: center;
+  height: 80px;
+  margin: 50px 0 0 0;
+}
+
+.title {font-size: 30px;}
+
+.main-container {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.desc-container {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section1 {height: 200px;}
+
+.section2 {height: 180px;}
+
+.section3 {
+  height: 380px;
+  padding-top: 30px;
+}
+
+.section4 {
+  height: 250px;
+  padding-bottom: 50px;
+}
+
+.labels-section1 {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.inputs-section1 {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.labels-section2 {
+  display: inline-block;
+  text-align: right;
+  width: 55%;
+  padding: 5px;
+  vertical-align: top;
+  margin: 10px 0;
+}
+
+.inputs-section2 {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.labels-section3 {text-align: center;}
+
+.inputs-section3 {
+  width: 320px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.labels-section4 {text-align: center;}
+
+.inputs-section4 {
+  width: 40%;
+  margin: 20px auto;
+}
+
+.input-field {
+  font-size: 12px;
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.role {
+  float: right;
+  margin-top: 10px;
+}
+
+.section-break {margin: 50px;}
+
+.white-space {margin: 30px;}
+
+ul {list-style: none;}
+
+.dropdown {
+  height: 35px;
+  width: 160px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#preferences {padding: 0;}
+
+.radio, .checkbox {
+  position: relative;
+  left: 0px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.checkbox {label {text-align: center;}}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 20px;
+}
+
+#comments {
+  height: 50px;
+  resize: vertical;
+  text-align: center;
+}
+
+.button-div {
+  width: 96px;
+	margin: auto;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  border: none;
+  margin-top: 40px;
+}
+
+textarea {width: 300px !important;}
+
+@media only screen and (max-width: 800px) {
+  .input-field {width: 100px;}
+}

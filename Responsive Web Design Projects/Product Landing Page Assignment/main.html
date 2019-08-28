@@ -1,0 +1,74 @@
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header id="header">
+    <div class="top-header">
+      <h1 class="title">Welcome to my YouTube channel page!</h1>
+      <div class="navigation">
+        <nav id="nav-bar">
+          <a class="nav-link" href="#intro">Intro</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#future">Future</a>
+        </nav>
+      </div>
+    </div>
+    <div class="bot-header">
+      <div class="logo">
+        <a href="https://www.youtube.com/channel/UCpB-OEgLBjZW398uCZ4DDDg"><img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/5/52/YouTube_social_white_circle_%282017%29.svg" alt="Youtube logo" width="200px" height="200px"/></a>
+        <a href="https://www.youtube.com/channel/UCpB-OEgLBjZW398uCZ4DDDg" class="subtitle"><h2 class="subtitle">Hugo Roriz</h2></a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="video">
+      <iframe id="video" width="1200" height="600" src="https://www.youtube.com/embed/0PanGEtbLuQ" frameborder="0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section id="intro">
+      <div class="bio">
+        <p class="bio-welcome">Welcome to my YouTube channel page!</p>
+        <p class="bio-text">Here you will find my most successfull video so far, and the opportunity to subscribe to email notifications, a short intro of myself and my future plans for the channel!</p>
+      </div>
+      <h2 class="subscribe-title">Subscribe via email</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+        <input id="submit" type="submit" value="Get Inbox Notifications" class="btn"></input>
+      </form>
+    </section>
+    <section id="about">
+      <h1 class="about-title">About</h1>
+      <p class="about-text">I started the channel around 2014 with no intentions of creating a subscriber base or having regular uploads. My videos mainly consist of multiplayer games (Destiny, Uncharted, COD) where I had some decent gameplay to show out or some rare achievements! </p>
+    </section>
+    <section id="future">
+      <h1 class="future-title">Future</h1>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-gamepad"></i>
+        </div>
+        <div class="desc">
+          <h2>More Gameplay</h2>
+          <p>More games, more collaborations, adding voice to the videos for entertainment purposes!</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-cloud-upload"></i>
+        </div>
+        <div class="desc">
+          <h2>More Uploads</h2>
+          <p>Start to have a schedule of at least 3 videos a week to try and grow subscriber base.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Video Quality</h2>
+          <p>Video capture device instead of the PS4 built-in capture, editing videos and adding a personal touch!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
