@@ -1,4 +1,4 @@
-#Survey Form Assignment
+# Survey Form Assignment
 
 Source code regarding the second final project for FreeCodeCamp Responsive Web Design course
 
