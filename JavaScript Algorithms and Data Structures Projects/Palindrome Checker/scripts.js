@@ -5,22 +5,22 @@ $("#input").keyup(function(event) {
 });
 
 function palindrome(str) {
-if (str.replace(/[\W_]/g, '').toLowerCase() === str.replace(/[\W_]/g,'').toLowerCase().split('').reverse().join('')) {
-  
-  $('#input').val("");
-  
-  $('#is').addClass("noDisplay");
-  $('#isnt').addClass("noDisplay");
-  
-  $('#is').removeClass("noDisplay");
-  
-} else {
-  
-  $('#input').val("");
-  
-  $('#is').addClass("noDisplay");
-  $('#isnt').addClass("noDisplay");
-  
-  $('#isnt').removeClass("noDisplay");
-}
+  if (str.replace(/[\W_]/g, '').toLowerCase() === str.replace(/[\W_]/g,'').toLowerCase().split('').reverse().join('')) {
+    
+    $('#input').val("");
+    
+    $('#is').addClass("noDisplay");
+    $('#isnt').addClass("noDisplay");
+    
+    $('#is').removeClass("noDisplay");
+    
+  } else {
+    
+    $('#input').val("");
+    
+    $('#is').addClass("noDisplay");
+    $('#isnt').addClass("noDisplay");
+    
+    $('#isnt').removeClass("noDisplay");
+  }
 };

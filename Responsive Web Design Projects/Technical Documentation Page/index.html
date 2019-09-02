@@ -1,139 +1,145 @@
-<head>
-  <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="nav-container">
-    <nav id="navbar">
-      <header class="nav-title">Technical Documentation</header>
-      <div class="break"></div>
-      <ul>
-        <a class="nav-link" href="#What_is_HTML?"><li>What is HTML?</li></a>
-        <a class="nav-link" href="#What_is_CSS?"><li>What is CSS?</li></a>
-        <a class="nav-link" href="#What_is_JS?"><li>What is JS?</li></a>
-        <a class="nav-link" href="#What_is_Angular?"><li>What is Angular?</li></a>
-        <a class="nav-link" href="#What_is_NodeJS?"><li>What is NodeJS?</li></a>
+<!DOCTYPE html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav id="navbar">
+        <header class="nav-title">Technical Documentation</header>
+        <div class="break"></div>
+        <ul>
+          <a class="nav-link" href="#What_is_HTML?"><li>What is HTML?</li></a>
+          <a class="nav-link" href="#What_is_CSS?"><li>What is CSS?</li></a>
+          <a class="nav-link" href="#What_is_JS?"><li>What is JS?</li></a>
+          <a class="nav-link" href="#What_is_Angular?"><li>What is Angular?</li></a>
+          <a class="nav-link" href="#What_is_NodeJS?"><li>What is NodeJS?</li></a>
+        </ul>
+      </nav>
+    </div>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_HTML?">
+        <header class="main-title">What is HTML?</header>
+        <h1 class="main-text">HTML is the standard markup language for creating Web pages.</h1>
+        <ul class="list">
+          <li>HTML stands for Hyper Text Markup Language</li>
+          <li>HTML describes the structure of Web pages using markup</li>
+          <li>HTML elements are the building blocks of HTML pages</li>
+          <li>HTML elements are represented by tags</li>
+          <li>HTML tags label pieces of content such as "heading" ( <code>&lt;header&gt;</code> ), "paragraph" ( <code>&lt;p&gt;</code> ), "table" ( <code>&lt;table&gt;</code> ), "script" (<code>&lt;script&gt;</code>) and so on</li>
+          <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
       </ul>
-    </nav>
-  </div>
-  <main id="main-doc">
-    <section class="main-section" id="What_is_HTML?">
-      <header class="main-title">What is HTML?</header>
-      <h1 class="main-text">HTML is the standard markup language for creating Web pages.</h1>
-      <ul class="list">
-        <li>HTML stands for Hyper Text Markup Language</li>
-        <li>HTML describes the structure of Web pages using markup</li>
-        <li>HTML elements are the building blocks of HTML pages</li>
-        <li>HTML elements are represented by tags</li>
-        <li>HTML tags label pieces of content such as "heading" ( <code>&lt;header&gt;</code> ), "paragraph" ( <code>&lt;p&gt;</code> ), "table" ( <code>&lt;table&gt;</code> ), "script" (<code>&lt;script&gt;</code>) and so on</li>
-        <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
-    </ul>
-      <xmp>
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Page Title</title>
-          </head>
-          <body>
-            <h1>My First Heading</h1>
-            <p>My first paragraph.</p>
-          </body>
-        </html> 
-      </xmp>
-      <p class="main-paragraph">Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
-    </section>
-    <section class="main-section" id="What_is_CSS?">
-      <header class="main-title">What is CSS?</header>
-      <ul class="list">
-        <li><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
-        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-        <li>External stylesheets are stored in <b>CSS files</b></li>
-      </ul>
-      <xmp>
-      // Element styling
-      
-      p {
-        text-align: center;
-        color: red;
-      }
-      
-      // Class styling
+        <xmp>
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Page Title</title>
+            </head>
+            <body>
+              <h1>My First Heading</h1>
+              <p>My first paragraph.</p>
+            </body>
+          </html> 
+        </xmp>
+        <p class="main-paragraph">Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+      </section>
+      <section class="main-section" id="What_is_CSS?">
+        <header class="main-title">What is CSS?</header>
+        <ul class="list">
+          <li><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+          <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+          <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+          <li>External stylesheets are stored in <b>CSS files</b></li>
+        </ul>
+        <xmp>
+        // Element styling
         
-      .center {
-        text-align: center;
-        color: red;
-      }  
+        p {
+          text-align: center;
+          color: red;
+        }
         
-      // Styling by ID
-        
-      #id {
-        background-color: white;
-        color: blue;
-      }
-      </xmp> 
-      <h1 class="main-text">CSS Solved a Big Problem</h1>
-      <p class="main-paragraph">HTML was never intended to contain tags for formatting a web page.</p>
-      <p class="main-paragraph">When tags like font and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
-      <p class="main-paragraph">To solve this problem, the World Wide Web Consortium (W3C) created CSS. CSS removed the style formatting from the HTML page</p>
-      <h1 class="main-text">CSS Saves a Lot of Work</h1>
-      <p class="main-paragraph">The style definitions are normally saved in external .css files.</p>
-      <p class="main-paragraph">With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
-    </section>
-    <section class="main-section" id="What_is_JS?">
-      <header class="main-title">What is JS?</header>
-      <h1 class="main-text">JavaScript is the programming language of HTML and the Web.</h1>
-      <p class="main-paragraph">JavaScript is one of the <strong>3 languages</strong> all web developers <strong>must</strong> learn:</p>
-      <ol class="list">
-        <li><strong>HTML</strong> to define the content of web pages</li>
-        <li><strong>CSS</strong> to specify the layout of web pages</li>
-        <li><strong>JavaScript</strong> to program the behavior of web pages</li>
-      </ol>
-      <p class="main-paragraph">Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. NodeJS is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.</p>
-      <xmp>
-        document.getElementById('demo').innerHTML = 'Hello JavaScript';
-        
-        document.getElementById("demo").style.fontSize = "35px";
-        
-        document.getElementById("demo").style.display = "none";
-      </xmp>
-      <h1 class="main-text">Did You Know?</h1>
-      <p class="main-paragraph">JavaScript and Java are completely different languages, both in concept and design.</p>
-      <p class="main-paragraph">JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.<br>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p>
-      <p class="main-paragraph">You can read more about the different JavaScript versions in the chapter JS Versions.</p>
-    </section>
-    <section class="main-section" id="What_is_Angular?">
-      <header class="main-title">What is Angular?</header>
-      <h1 class="main-text">Angular is a Javascript framework</h1>
-      <ul class="list">
-        <li>Angular extends HTML with new attributes</li>
-        <li>Angular is perfect for Single Page Applications (SPAs)</li>
-        <li>Angular is easy to learn</li>
-      </ul>
-      <p class="main-paragraph">AngularJS is a <strong>JavaScript framework</strong>. It can be added to an HTML page with a <code>&lt;script&gt;</code> tag.</p>
-      <p class="main-paragraph">AngularJS extends HTML attributes with <strong>
-Directives</strong>, and binds data to HTML with <strong>Expressions</strong>.</p>
-    </section>
-    <section class="main-section" id="What_is_NodeJS?">
-      <header class="main-title">What is NodeJS?</header>
-      <h1 class="main-text">NodeJS is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside the browser</h1>
-      <ul class="list">
-        <li>NodeJS is an open source server environment</li>
-        <li>NodeJS is free</li>
-        <li>NodeJS runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
-        <li>NodeJS uses JavaScript on the server</li>
-      </ul>
-      <xmp>
-        var http = require('http');
+        // Class styling
+          
+        .center {
+          text-align: center;
+          color: red;
+        }  
+          
+        // Styling by ID
+          
+        #id {
+          background-color: white;
+          color: blue;
+        }
+        </xmp> 
+        <h1 class="main-text">CSS Solved a Big Problem</h1>
+        <p class="main-paragraph">HTML was never intended to contain tags for formatting a web page.</p>
+        <p class="main-paragraph">When tags like font and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+        <p class="main-paragraph">To solve this problem, the World Wide Web Consortium (W3C) created CSS. CSS removed the style formatting from the HTML page</p>
+        <h1 class="main-text">CSS Saves a Lot of Work</h1>
+        <p class="main-paragraph">The style definitions are normally saved in external .css files.</p>
+        <p class="main-paragraph">With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+      </section>
+      <section class="main-section" id="What_is_JS?">
+        <header class="main-title">What is JS?</header>
+        <h1 class="main-text">JavaScript is the programming language of HTML and the Web.</h1>
+        <p class="main-paragraph">JavaScript is one of the <strong>3 languages</strong> all web developers <strong>must</strong> learn:</p>
+        <ol class="list">
+          <li><strong>HTML</strong> to define the content of web pages</li>
+          <li><strong>CSS</strong> to specify the layout of web pages</li>
+          <li><strong>JavaScript</strong> to program the behavior of web pages</li>
+        </ol>
+        <p class="main-paragraph">Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. NodeJS is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.</p>
+        <xmp>
+          document.getElementById('demo').innerHTML = 'Hello JavaScript';
+          
+          document.getElementById("demo").style.fontSize = "35px";
+          
+          document.getElementById("demo").style.display = "none";
+        </xmp>
+        <h1 class="main-text">Did You Know?</h1>
+        <p class="main-paragraph">JavaScript and Java are completely different languages, both in concept and design.</p>
+        <p class="main-paragraph">JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.<br>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p>
+        <p class="main-paragraph">You can read more about the different JavaScript versions in the chapter JS Versions.</p>
+      </section>
+      <section class="main-section" id="What_is_Angular?">
+        <header class="main-title">What is Angular?</header>
+        <h1 class="main-text">Angular is a Javascript framework</h1>
+        <ul class="list">
+          <li>Angular extends HTML with new attributes</li>
+          <li>Angular is perfect for Single Page Applications (SPAs)</li>
+          <li>Angular is easy to learn</li>
+        </ul>
+        <p class="main-paragraph">AngularJS is a <strong>JavaScript framework</strong>. It can be added to an HTML page with a <code>&lt;script&gt;</code> tag.</p>
+        <p class="main-paragraph">AngularJS extends HTML attributes with <strong>
+  Directives</strong>, and binds data to HTML with <strong>Expressions</strong>.</p>
+      </section>
+      <section class="main-section" id="What_is_NodeJS?">
+        <header class="main-title">What is NodeJS?</header>
+        <h1 class="main-text">NodeJS is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside the browser</h1>
+        <ul class="list">
+          <li>NodeJS is an open source server environment</li>
+          <li>NodeJS is free</li>
+          <li>NodeJS runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+          <li>NodeJS uses JavaScript on the server</li>
+        </ul>
+        <xmp>
+          var http = require('http');
 
-        http.createServer(function (req, res) {
-          res.writeHead(200, {'Content-Type': 'text/html'});
-          res.end('Hello World!');
-        }).listen(8080);
-      </xmp>
-      <p class="main-paragraph">NodeJS runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.</p>
-      <p class="main-paragraph">NodeJS eliminates the waiting, and simply continues with the next request.</p>
-    </section>
-  </main>
-</body>
+          http.createServer(function (req, res) {
+            res.writeHead(200, {'Content-Type': 'text/html'});
+            res.end('Hello World!');
+          }).listen(8080);
+        </xmp>
+        <p class="main-paragraph">NodeJS runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.</p>
+        <p class="main-paragraph">NodeJS eliminates the waiting, and simply continues with the next request.</p>
+      </section>
+    </main>
+  </body>
+</html>

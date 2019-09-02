@@ -1,2 +1,30 @@
-<link rel="stylesheet" type="text/scss" href="styles.scss">
-<script src="scripts.js"></script>
+<!DOCTYPE html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Roman Numeral Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="title-container">
+      <h1 id="title" class="title">Roman Numeral Converter</h1>
+    </div>
+    <main class="main-container">
+      <div class="desc-container">
+        <h2 id="description" class="description">Convert to Roman Numeral</h2>
+        <input type="text" id="input" class="input-field" placeholder="Numeral" autofocus required>
+        <div class="response-field">
+          <p id="result"></p>
+          <p id="wrong" class="error noDisplay">Not a number</p>
+          <div class="button-div">
+            <input type="button" id="button" class="submit" value="Submit" onclick="roman(document.getElementById('input').value)"></input>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
