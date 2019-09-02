@@ -1,0 +1,66 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {font-family: 'Lato', sans-serif;}
+
+body {background-color: #fce59f;}
+
+.title-container {
+  text-align: center;
+  height: 80px;
+  margin: 50px 0 0 0;
+}
+
+.title {font-size: 30px;}
+
+.main-container {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.desc-container {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.input-field {
+  font-size: 12px;
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  margin: 25px 10px 10px 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.response-field {}
+
+.response {
+  height: 25px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.noDisplay {display: none;}
+
+.button-div {
+  width: 96px;
+	margin: auto;
+}
+
+#button {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  border: none;
+  margin-top: 40px;
+}
+
+.yes {color: green;}
+
+.no {color: red;}

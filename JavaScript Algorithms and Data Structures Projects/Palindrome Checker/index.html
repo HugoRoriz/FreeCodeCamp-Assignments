@@ -1,0 +1,21 @@
+<html>
+  <head></head>
+  <body>
+    <div class="title-container">
+      <h1 id="title" class="title">Palindrome Checker</h1>
+    </div>
+    <main class="main-container">
+      <div class="desc-container">
+        <h2 id="description" class="description">Is it a Palindrome ?</h2>
+        <input type="text" id="input" class="input-field" placeholder="Palindrome" autofocus required>
+        <div class="response-field">
+          <p id="is" class="response yes noDisplay">Yes! It is a palindrome!</p>
+          <p id="isnt" class="response no noDisplay">No! It is not a palindrome!</p>
+          <div class="button-div">
+            <input type="button" id="button" class="submit" value="Submit" onclick="palindrome(document.getElementById('input').value)"></input>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
