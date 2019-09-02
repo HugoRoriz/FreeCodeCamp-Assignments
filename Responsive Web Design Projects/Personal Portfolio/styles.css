@@ -11,14 +11,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  li {
-    color: #eee;
-    display: inline;
-    margin: 20px 40px;
-    float: right;
-    &:hover {color: #fff;}
-  }
 }
+
+#navbar > a > li {
+  color: #eee;
+  display: inline;
+  margin: 20px 40px;
+  float: right;
+}
+
+#navbar > a > li:hover {color: #fff;}
 
 #welcome-section {
   background-color: #679ef7;

@@ -16,8 +16,9 @@
   font-size: 25px;
   margin-top: 50px;
   text-align: center;
-  ul {padding: 0;}
 }
+
+#navbar > ul {padding: 0;}
 
 .nav-title {
   width: 60%;
@@ -38,10 +39,11 @@
   list-style: none;
   text-decoration: none;
   color: #fff;
-  &:hover,
-  &:active {color: #bec4ce;}
-  li {padding: 10px 0;}
 }
+
+.nav-link:hover, .nav-link:active {color: #bec4ce;}
+
+.nav-link:hover > li, .nav-link:active > li {padding: 10px 0;}
 
 #main-doc {
   width: 80vw;
@@ -67,12 +69,11 @@
   padding: 0 30px 10px 30px;
 }
 
-.list {
-  margin-bottom: 50px;
-  li {
-    padding: 5px;
-    margin-left: 10px;
-  }
+.list {margin-bottom: 50px;}
+
+.list > li {
+  padding: 5px;
+  margin-left: 10px;
 }
 
 xmp {

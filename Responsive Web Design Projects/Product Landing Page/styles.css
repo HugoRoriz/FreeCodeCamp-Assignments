@@ -124,10 +124,11 @@ input[type="submit"] {
   margin: 15px 0;
   border: 0;
   background-color: #f1c40f;
-  &:hover {
-    background-color: orange;
-    transition: background-color 1s;
-  }
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
 }
 
 .btn {
@@ -149,39 +150,22 @@ input[type="submit"] {
   margin-bottom: 100px;
 }
 
-#future {
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 125px;
-    width: 30vw;
-    color: darkorange;
+#future > .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 30vw;
+  color: darkorange;
+}
 
-    @media (max-width: 550px) {
-      display: none;
-    }
-  }
-
-  .desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 125px;
-    width: 60vw;
-    padding: 5px;
-
-    @media (max-width: 550px) {
-      width: 100%;
-      text-align: center;
-      padding: 0;
-      height: 150px;
-    }
-  }
-  
-  @media (max-width: 650px) {
-    margin-top: 0;
-  }
+#future > .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 60vw;
+  padding: 5px;
 }
 
 .grid {
@@ -198,4 +182,19 @@ input[type="submit"] {
 #about {
   padding-top: 70px;
   margin-top: -70px;
+}
+
+@media (max-width: 550px) {
+  #future > .icon {display: none;}
+
+  #future > .desc {
+    height: 150px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  #future > .desc {margin-top: 0;}
 }

@@ -127,7 +127,7 @@ ul {list-style: none;}
   padding-bottom: 10px;
 }
 
-.checkbox {label {text-align: center;}}
+.checkbox > label {text-align: center;}
 
 .userRatings,
 input[type="checkbox"] {
