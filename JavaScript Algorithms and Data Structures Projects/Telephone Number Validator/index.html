@@ -10,5 +10,24 @@
     <script src="scripts.js"></script>
   </head>
   <body>
+    <div class="title-container">
+      <h1 id="title" class="title">Telephone Number Validator</h1>
+    </div>
+    <main class="main-container">
+      <div class="desc-container">
+        <h2 id="description" class="description">Validate a telephone number</h2>
+        <input type="text" id="input" class="input-field" placeholder="Number" autofocus required>
+        <div class="response-field">
+          <p id="right" class="response yes noDisplay">Valid number!</p>
+          <p id="wrong" class="response no noDisplay">Not a valid number!</p>
+          <div class="button-div">
+            <input type="button" id="button" class="submit" value="Submit" onclick="telephoneCheck(document.getElementById('input').value)"></input>
+          </div>
+        </div>
+      </div>
+      <div class="ps-field">
+        <p class="ps">* US telephone number only, e.g. 535-245-6891</p>
+      </div>
+    </main>
   </body>
 </html>
