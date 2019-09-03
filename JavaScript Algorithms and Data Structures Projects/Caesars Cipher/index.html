@@ -10,5 +10,24 @@
     <script src="scripts.js"></script>
   </head>
   <body>
+    <div class="title-container">
+      <h1 id="title" class="title">Caesars Cipher</h1>
+    </div>
+    <main class="main-container">
+      <div class="desc-container">
+        <h2 id="description" class="description">Decode your cipher</h2>
+        <input type="text" id="input" class="input-field" placeholder="Cipher" autofocus required>
+        <div class="response-field">
+          <p id="result"></p>
+          <div class="button-div">
+            <input type="button" id="button" class="submit" value="Submit" onclick="rot13(document.getElementById('input').value)"></input>
+          </div>
+        </div>
+      </div>
+      <div class="ps-field">
+        <p class="ps">* ROT13 is a simple letter substitution cipher that replaces a letter with the 13th letter after it</p>
+        <p class="ps">Ciphers: "SERR PBQR PNZC", "SERR CVMMN!", "GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT."</p>
+      </div>
+    </main>
   </body>
 </html>

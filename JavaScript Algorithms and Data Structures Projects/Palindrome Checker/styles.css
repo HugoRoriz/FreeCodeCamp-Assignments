@@ -61,6 +61,13 @@ body {background-color: #fce59f;}
   margin-top: 40px;
 }
 
+.ps-field {text-align: center;}
+
+.ps {
+  font-size: 14px;
+  padding: 10px;
+}
+
 .yes {color: green;}
 
 .no {color: red;}
