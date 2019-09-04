@@ -10,5 +10,30 @@
     <script src="scripts.js"></script>
   </head>
   <body>
+    <div class="title-container">
+      <h1 id="title" class="title">Cash Register</h1>
+    </div>
+    <main class="main-container">
+      <div class="desc-container">
+        <h2 id="description" class="description">Get your change!</h2>
+        <input type="text" id="price" class="input-field" placeholder="price" autofocus required>
+        <input type="text" id="cash" class="input-field" placeholder="cash" autofocus required>
+        <input type="text" id="cid" class="input-field" placeholder="cid" autofocus required>
+        <div class="response-field">
+          <p id="result" class="result"></p>
+          <div class="button-div">
+            <input type="button" id="button" class="submit" value="Submit" onclick="checkCashRegister()"></input>
+          </div>
+        </div>
+      </div>
+      <div class="ps-field">
+        <p class="ps">
+          * Input takes 3 arguments (price, cash, cid(cash-in-drawer)), e.g.
+        </p>
+        <p class="ps">
+          price = 19.50<br>cash = 20.00<br>cid = [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]<br><br>expected result = {status: "OPEN", change: [["QUARTER", 0.5]]}
+        </p>
+      </div>
+    </main>
   </body>
 </html>

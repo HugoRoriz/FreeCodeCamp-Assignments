@@ -6,4 +6,4 @@ JavaScript Algorithms and Data Structures Projects were built with HTML, SCSS an
 
 Simply download and run a local server.
 
-CodePen link: 
+CodePen link: https://codepen.io/hugororiz/pen/YzKxLab

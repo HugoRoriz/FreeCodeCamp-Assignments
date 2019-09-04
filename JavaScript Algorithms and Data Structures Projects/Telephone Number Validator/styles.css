@@ -61,13 +61,6 @@ body {background-color: #fce59f;}
   margin-top: 40px;
 }
 
-.error {
-  height: 25px;
-  font-size: 22px;
-  text-align: center;
-  color: red;
-}
-
 .yes {color: green;}
 
 .no {color: red;}
