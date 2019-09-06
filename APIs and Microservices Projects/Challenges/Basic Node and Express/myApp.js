@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 
 // --> 7)  Mount the Logger middleware here
+
 /* function loggerMware(req, res, next) {
   let method = req.method;
   let path = req.path;
@@ -10,18 +11,15 @@ var app = express();
   
   console.log(method + ' ' + path + ' - ' + ip);
   next();
-}
-*/
+}*/
 
 // --> 11)  Mount the body-parser middleware  here
 
 app.use(bodyParser.urlencoded({extended: false}));
 
-
 /** 1) Meet the node console. */
 
 // console.log("Hello World");
-
 
 /** 2) A first working Express Server */
 
@@ -88,8 +86,6 @@ app.use(express.static(__dirname + '/public'));
   
 /** 11) Get ready for POST Requests - the `body-parser` */
 // place it before all the routes !
-
-
 
 /** 12) Get data form POST  */
 
