@@ -18,23 +18,32 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-// your first API endpoint... 
-app.get('/api/timestamp/:date_string?', function(req, res) {
 
-  var input = req.params.date_string;
-  var dateVal = new Date(input);
+// your first API endpoint... 
+app.get('/api/whoami', function (req, res) {
+  var result = {};
+  var ipAddress = req.ip;
+
+  var trimedIpAddress = ipAddress.replace(/[A-Za-z]|:/g, '');
+
+  var language = req.headers['accept-language'];
+  var trimedLanguage = language.slice(0, language.indexOf(','));
   
-  if (dateVal.length === 0) {
-    var nowDate = new Date();
-    res.json({"unix": nowDate.getTime(), "utc": nowDate.toUTCString()});
-    
-  } else if (new Date(dateVal)) {
-    res.json({"unix": dateVal.getTime(), "utc": dateVal.toUTCString()});
-    
-  } else {
-    res.json({"unix": null, "utc": "Invalid Date"})
-  }
+  var softwareInfo = req.headers['user-agent'];
+  var startIndex = softwareInfo.indexOf('\(');
+  var endIndex = softwareInfo.indexOf('\)');
+  var trimedSoftwareInfo = softwareInfo.slice(startIndex + 1, endIndex);
+
+  result = {
+      ipaddress: trimedIpAddress,
+      language: trimedLanguage,
+      software: trimedSoftwareInfo,
+    };
+
+  res.json(result);
 });
+
+
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {

@@ -10,8 +10,6 @@ Glitch live preview: https://fcc-api-projects--timestamp-microservice.glitch.me
 
 Exercise description below!
 
-
-
 # API Project: Timestamp Microservice for FCC
 
 ### User stories:
