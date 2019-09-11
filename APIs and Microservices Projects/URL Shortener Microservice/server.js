@@ -5,7 +5,6 @@ var mongodb = require('mongodb');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
-var assert = require('assert');
 
 var mongoClient = mongodb.MongoClient;
 var dbUrl = process.env.MONGOLAB_URI;
@@ -16,7 +15,6 @@ var app = express();
 // Basic Configuration 
 var port = process.env.PORT || 3000;
 
-/** this project needs a db !! **/ 
 mongoose.connect(process.env.MONGOLAB_URI);
 
 app.use(cors());
@@ -43,11 +41,11 @@ mongoClient.connect(dbUrl, (err, client) => {
   
   var db = client.db('tinyUrls');
 
-  if (err) { console.log('Unable to connect to the mongoDB server. Error:', err);
+  if (err) {console.log('Unable to connect to the mongoDB server. Error: ', err);
   
   } else {
 
-    console.log('Connection established to', dbUrl);
+    console.log('Connection established to ', dbUrl);
 
     app.get("/api/shorturl/new/:url(*)", function(req, res) {
       
@@ -56,26 +54,23 @@ mongoClient.connect(dbUrl, (err, client) => {
       if (/^https?:\/\//.test(request) === true) {
         
         var collection = db.collection('tinyUrls');
-
         var tinyUrl = {};
         
         collection.count(function(err, result) {
           
-          if (err) { console.log(err);
+          if (err) {console.log(err);
 
           } else {
 
             var num = result + 1;
-
             var shortUrl = num;
-
             tinyUrl = {index: num, original_url: request, short_url: shortUrl};
 
             collection.insert(tinyUrl, function(err, result) {
 
-              if (err) { console.log(err);
+              if (err) {console.log(err);
 
-              } else { console.log('Inserted %d documents into the tinyUrls collection. The documents inserted with "_id" are:', result.length, result);}
+              } else {console.log('Inserted %d documents into the tinyUrls collection. The documents inserted with "_id" are: ', result.length, result);}
             
             });
             
@@ -83,36 +78,27 @@ mongoClient.connect(dbUrl, (err, client) => {
           }
         }); 
         
-      } else { res.json({'error': 'invalid URL'});}
+      } else {res.json({'error': 'invalid URL'});}
       
     }); 
 
     app.get('/api/shorturl/:index', function(req,res) {
 
       var urlNumber = req.params.index;
-
       var collection = db.collection('tinyUrls');        
-
       var query = {};
-
-      var index = 'index';
-
       query.index = parseInt(urlNumber);
 
       collection.findOne(query, function(err, document) {
 
-        if (err) { console.log(err); };
+        if (err) {console.log(err);};
 
-        if (document) { res.redirect(document.original_url);
+        if (document) {res.redirect(document.original_url);
 
-        } else { res.json({'error': 'invalid URL'});}
-
+        } else {res.json({'error': 'invalid URL'});}
       });
-    
     }); 
-  
   }
-
 }); 
 
 app.listen(port, function() {

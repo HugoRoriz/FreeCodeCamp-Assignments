@@ -1,7 +1,8 @@
 {
-	"name": "fcc-api-projects-boilerplate",
+	"name": "fcc-api-projects-timestamp-microservice",
 	"version": "0.0.1",
-	"description": "An FCC Backend Challenge",
+	"description": "FCC Backend Project",
+	"author": "Hugo Roriz",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
