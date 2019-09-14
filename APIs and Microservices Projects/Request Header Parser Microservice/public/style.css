@@ -15,9 +15,13 @@ body {
 	margin-top: 40px;
 }
 
-h3 {margin-top: 30px;}
+h3 {margin-top: 70px;}
 
-.footer {margin-top: 40px;}
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
 
 .user-stories {
   position: relative;

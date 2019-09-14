@@ -6,24 +6,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>URL Shortener</title>
       <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="../public/style.css" rel="stylesheet" type="text/css">
-      <link href="../public/normalize.css" rel="stylesheet" type="text/css">
+      <link href="/public/normalize.css" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
    </head>
    <body>
       <div class="container">
         <h2>API Project: URL Shortener Microservice</h2>
-        <h3>User Story: </h3>
+        <h3>User Story (Exercise) :</h3>
         <ol>
           <li>I can POST a URL to <code>[project_url]/api/shorturl/new/[URL]</code> and I will receive a shortened URL as a JSON response.<br>Example: <code>{"original_url": "www.google.com", "short_url": 1};</code></li>
           <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error": "invalid URL"};</code></li>
           <li>When I visit the shortened URL, it will redirect me to my original link.</li>
         </ol>
         <h3>Short URL Creation </h3>
-        <p>example: <code>[project_url]/api/shorturl/new/https://www.google.com</code></p>
-        <h3>Example Usage:</h3>
-        <a href="https://fcc-api-project--url-shortener-microservice.glitch.me/api/shorturl/4">[this_project_url]/api/shorturl/4</a>
-        <h3>Will Redirect to:</h3>
-        <p>hugororiz.github.io</p>
+        <code>[project_url]/api/shorturl/new/https://www.google.com</code>
+        <h3>Example Usage :</h3>
+        <a href="https://fcc-api-project--url-shortener-microservice.glitch.me/api/shorturl/4">[project_url]/api/shorturl/4</a>
+        <h3>Will Redirect to :</h3>
+        <p><a href="https://hugororiz.github.io">hugororiz.github.io</a></p>
       </div>
       <div class="footer">
         <p>by <a href="https://hugororiz.github.io">Hugo Roriz</a></p>

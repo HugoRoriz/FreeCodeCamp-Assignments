@@ -10,7 +10,7 @@ var app = express();
 var cors = require('cors');
 app.use(cors({optionSuccessStatus: 200}));  // some legacy browsers choke on 204
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + '/views/index.html');

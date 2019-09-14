@@ -22,7 +22,7 @@ Exercise description below!
 
 #### Usage:
 
-[this_project_url]/api/shorturl/4
+[project_url]/api/shorturl/4
 
 #### Will redirect to:
 
