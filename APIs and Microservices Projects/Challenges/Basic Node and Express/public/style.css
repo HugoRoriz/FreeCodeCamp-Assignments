@@ -1,16 +1,28 @@
 /* the 'body' selector is required for the tests to pass */
 /* You can change the style attributes if you want */
 body {
-  background-color: #222;
-  color: #ddd;
+  background-color: white;
+  color: black;
   text-align: center;
   font-family: sans-serif;
 }
 
 h1 {
   font-size: 4em;
+  margin-bottom: 2em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 4em;
 }
 
 input[type=text], label {
   margin-bottom: 8px;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }

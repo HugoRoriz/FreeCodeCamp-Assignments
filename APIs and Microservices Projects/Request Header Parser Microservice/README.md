@@ -4,6 +4,8 @@ Source code regarding the second project for FreeCodeCamp APIs and Microservices
 
 APIs and Microservices Challenges were built with NodeJS, Express, MongoDB and mongoose, using Glitch.
 
+Glitch files: https://glitch.com/edit/#!/fcc-api-project--request-header-parser-microservice
+
 Glitch live preview: https://fcc-api-project--request-header-parser-microservice.glitch.me
 
 Exercise description below!
