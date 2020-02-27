@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {font-family: 'Lato', sans-serif;}
 
 body {
-  background: #87b5b5;
+  background: #3f8ba0;
   margin: 10px 0;
 }
 
 #preview, .title {display: inline-block;}
 
 .colorScheme, .editorWrap textarea, .previewWrap {
-  background-color: #c0d8d8;
-  border: 1px solid #1d2f2f;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px 2px #11252b;
   border-top: none;
 }
 
@@ -18,9 +20,8 @@ body {
   position: relative;
   background-color: #4aa3a3;
   padding: 4px 4px 3px 3px;
-  border: 1px solid #1d2f2f;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
-  font-family: Russo One;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px 2px #11252b;
   font-size: 15px;
 }
 
@@ -85,6 +86,11 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 850px) {
+  .previewWrap {width: 630px;}
+  .editorWrap {width: 550px;}
+}
+
 .maximized {
   width: 96%;
   min-height: 100vh;
@@ -97,43 +103,6 @@ body {
 }
 
 .hide {display: none;}
-
-#preview blockquote {
-  border-left: 3px solid #224B4B;
-  color: #224B4B;
-  padding-left: 5px;
-  margin-left: 25px;
-}
-
-#preview code {
-  background: white;
-  padding: 1px 4px 2px 4px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#preview pre {
-  background: white;
-  padding: 5px 0 5px 5px;
-}
-
-#preview h1 {border-bottom: 2px solid #224B4B;}
-
-#preview h2 {border-bottom: 1px solid #224B4B;}
-
-#preview table {border-collapse: collapse;}
-
-#preview td, #preview th {
-  border: 2px solid #224B4B;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-@media screen and (max-width: 850px) {
-  .previewWrap {width: 630px;}
-  
-  .editorWrap {width: 550px;}
-}
 
 @media screen and (max-width: 650px) {
   body {margin: 5px 0;}
@@ -149,8 +118,39 @@ body {
   }
   
   .previewWrap {width: 95vw;}
-  
+
   .previewWrap #preview {width: 100%;}
   
   .previewWrap #preview img {height: 200px;}
+}
+
+#preview blockquote {
+  border-left: 3px solid #224B4B;
+  color: #224B4B;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#preview code {
+  background: grey;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#preview pre {
+  background: grey;
+  padding: 5px 0 5px 5px;
+}
+
+#preview h1 {border-bottom: 2px solid #224B4B;}
+
+#preview h2 {border-bottom: 1px solid #224B4B;}
+
+#preview table {border-collapse: collapse;}
+
+#preview td, #preview th {
+  border: 2px solid #224B4B;
+  padding-left: 5px;
+  padding-right: 5px;
 }

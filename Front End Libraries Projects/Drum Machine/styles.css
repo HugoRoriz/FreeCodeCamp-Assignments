@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {font-family: 'Lato', sans-serif;}
 
 body {
-  font-family: Russo One;
   user-select: none;
   background-color: #8d8d8d;
 }
